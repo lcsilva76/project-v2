@@ -1,16 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Filhos from "./components/filhos"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const nomes = ['Luis','Thais','Andreia']
+  const aluno = 'Luis'
 
   return (
     <>
-      <h1>Olá Mundo!!!</h1>
-      <p>Vamos lá pessoal!!!</p>
-      <p>Mais um teste!!!</p>
+      <h1>Teste</h1>
+      <Filhos nomes={nomes} aluno={aluno}/>
     </>
   )
 }
